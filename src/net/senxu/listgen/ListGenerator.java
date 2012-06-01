@@ -19,10 +19,14 @@ public class ListGenerator {
     
     public static void main(String[] args){
         File f=new File("seedlist.txt");
-        String pref="http://www.dianping.com/search/category/2/10/p"; 
+        //String pref="http://www.dianping.com/search/category/2/10/p"; 
+        //String pref="http://www.dianping.com/search/category/2/10/g322p";
+        //String pref="http://www.dianping.com/search/category/2/10/g311r14p";
+        //String pref="http://www.dianping.com/search/category/2/10/g311r20p";
+        String pref="http://www.dianping.com/search/category/2/10/g332p";
         int start=1;
         int end=50;
-        ListGenForDP(pref, start, end, f);
+        ListGenForDP(pref, start, end+1, f);
     }
 
     private static void ListGenForDP(String pref, int start, int end, File f) {
